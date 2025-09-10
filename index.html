@@ -2193,6 +2193,7 @@
           if (idx > 0) {
             idx--;
             renderQuestion();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         });
 
@@ -2200,6 +2201,7 @@
           if (idx < 39) {
             idx++;
             renderQuestion();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           } else {
             // Finish
             showStep('result');
@@ -2208,6 +2210,7 @@
             // Auto-send to backend on completion
             // sendToBackend(payload);
             console.log(payload)
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         });
 
